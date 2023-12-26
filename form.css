@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(rgba(178, 199, 251, 0.7),rgba(247, 231, 148, 0.7)),url("img/library.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header h1{
+    font-size: 30px;
+    text-shadow: 2px 2px 5px navy;
+   
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    padding: 0.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(181, 252, 254) , rgb(237, 237, 119));
+
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{ 
+    color: navy ;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+.survey{
+    align-items: center;
+    margin: 100px;
+}
+
+.student p, .teacher p{
+    font-size: 20px;
+    color: navy ;
+    font-weight: 600;
+}
+
+.question-answer{
+    font-size: 18px;
+    color: rgb(142, 19, 52);
+    font-weight: 550;
+}
+
+textarea{
+   border: 2px solid  rgb(142, 19, 52);
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: navy;
+    border: 3px solid red;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid rgb(235, 162, 144);
+    background: rgb(235, 162, 144);
+    transition: 1s;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+}
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.icons{
+    background-color: antiquewhite;
+}
+
+
+
+
